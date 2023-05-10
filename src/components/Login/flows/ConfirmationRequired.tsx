@@ -55,12 +55,13 @@ export default forwardRef<HTMLFormElement, LoginFlowProps>(
 
   return (
     <form onSubmit={onSubmit} className="Login__form" name="NewUser" ref={ref}>
-    <h1 className="Login__title">CONFIRM</h1>
+    <h1 className="Login__title">CONFIRM EMAIL</h1>
+    <span>Please enter the code that was sent to your email.</span>
     <input
         value={confirmCode}
         className="Login__forminput"
         onChange={(e) => setConfirmCode(e.target.value)}
-        placeholder="Confirmation"
+        placeholder="Confirmation code"
         required
         type="text"
         name="confirmation"

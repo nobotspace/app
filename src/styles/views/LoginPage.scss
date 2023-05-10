@@ -46,7 +46,20 @@
     font-weight: 300;
     position: absolute;
     bottom: 1rem;
-    left: 1rem;
+    right: 1rem;
     color: color("red1");
+  }
+
+  &__warning {
+    font-size: 0.7em;
+    font-weight: 300;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 700;
+    background-color: color("red1");
+    padding: 1em;
+    color: color("white");
+
   }
 }

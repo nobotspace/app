@@ -44,6 +44,15 @@ export default React.forwardRef<HTMLDivElement, {}>(function LoginPage(_, ref) {
       <span className="LoginPage__about">
         With automated generation of rigged, playable 3D nobot models.
       </span>
+      <div className="LoginPage__warning">
+        Password requirements:
+        <ul>
+          <li>- At least 8 characters</li>
+          <li>- At least 1 number</li>
+          <li>- At least 1 uppercase letter</li>
+          <li>- At least 1 lowercase letter</li>
+        </ul>
+      </div>
     </main>
   );
 });

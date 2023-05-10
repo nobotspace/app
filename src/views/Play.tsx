@@ -49,7 +49,7 @@ export default function Play() {
     worldRef.current = new WebWorld(
       canvasRef.current!,
       `https://${nobot.getNobot.resources.body.model.bucket}.s3.amazonaws.com/${nobot.getNobot.resources.body.model.key}`,
-      'https://nobotspace-next-git-maria-evankirkiles.vercel.app/assets/worlds/room.glb',
+      'https://abitofpersonalspace.s3.amazonaws.com/spaces/childhood_f63b6/evanhome.glb',
       {
         onDownloadFinish: () => setIsLoading(false),
         onDownloadProgress: (p: number, d: number, t: number) => {
