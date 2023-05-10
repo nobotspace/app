@@ -1,0 +1,28 @@
+/*
+ * _animations.scss
+ * author: evan kirkiles
+ * created on Mon Feb 27 2023
+ * 2023 experimount 
+ */
+
+@keyframes faderight {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

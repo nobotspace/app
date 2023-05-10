@@ -1,0 +1,32 @@
+/*
+ * _typography.scss
+ * author: evan kirkiles
+ * created on Tue Feb 28 2023
+ * 2023 experimount
+ */
+
+body {
+  font-family: $body-font;
+  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
+  color: color("black");
+  font-size: pxToRem(14);
+  line-height: 1;
+
+  @include media("xs") {
+    font-size: pxToRem(16);
+  }
+
+  @include media("lg") {
+    font-size: pxToRem(14);
+  }
+
+  @include media("xl") {
+    font-size: pxToRem(14);
+  }
+
+  @include media("xxl") {
+    font-size: pxToRem(18);
+  }
+}

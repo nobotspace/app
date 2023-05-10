@@ -1,0 +1,13 @@
+/*
+ * base.scss
+ * author: evan kirkiles
+ * created on Sun May 07 2023
+ * 2023 the nobot space 
+ */
+
+@import "settings/colors", "settings/fonts", "settings/responsive", "settings/zIndex";
+@import "helpers/utils", "helpers/fontface";
+@import "global/animations", "global/reset", "global/sizings", "global/transitions", "global/typography";
+@import "global.scss";
+@import "views/Layout.scss", "views/LoginPage.scss", "views/HomePage.scss", "views/PlayPage.scss";
+@import "components/Login.scss", "components/Nav.scss", "components/ControlBar.scss", "components/NobotCard.scss";

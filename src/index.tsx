@@ -1,16 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import 'styles/base.scss';
+import App from './app/App';
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { persistedStore, store } from "app/store";
+import { PersistGate } from "redux-persist/integration/react";
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import AuthContextProvider from 'contexts/AuthContext';
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <HelmetProvider>
+      <BrowserRouter>
+        <Provider store={store}>
+          <PersistGate loading={null} persistor={persistedStore}>
+            <AuthContextProvider>
+              <App />
+            </AuthContextProvider>
+          </PersistGate>
+        </Provider>
+      </BrowserRouter>
+    </HelmetProvider>
   </React.StrictMode>
 );
 

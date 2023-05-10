@@ -1,0 +1,31 @@
+/*
+ * ControlBar.scss
+ * author: evan kirkiles
+ * created on Wed May 10 2023
+ * 2023 the nobot space 
+ */
+
+
+.ControlBar {
+  position: fixed;
+  width: 100%;
+  height: var(--header-height);
+  bottom: 0;
+  left: 0;
+  background-color: color("red1");
+  color: color("white");
+  padding: 0.1em 0.2em ;
+  font-size: 2em;
+  font-weight: 700;
+  border-top: 1px solid color("white");
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

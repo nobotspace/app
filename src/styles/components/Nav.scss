@@ -1,0 +1,32 @@
+/*
+ * Nav.scss
+ * author: evan kirkiles
+ * created on Tue May 09 2023
+ * 2023 the nobot space 
+ */
+
+.Nav {
+  position: sticky;
+  width: 100%;
+  height: var(--header-height);
+  top: 0;
+  left: 0;
+  background-color: color("red1");
+  color: color("white");
+  padding: 0.1em 0.2em ;
+  font-size: 2em;
+  font-weight: 700;
+  border-bottom: 1px solid color("white");
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+  z-index: 2;
+  overflow: hidden;
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

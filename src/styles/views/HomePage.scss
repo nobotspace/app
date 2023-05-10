@@ -1,0 +1,42 @@
+/*
+ * HomePage.scss
+ * author: evan kirkiles
+ * created on Tue May 09 2023
+ * 2023 the nobot space 
+ */
+
+.HomePage {
+  width: 100%;
+
+  &__interface {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    grid-auto-rows: min-content;
+    padding: 1em;
+    gap: 0.5em;
+    padding-bottom: calc(1em + var(--header-height));
+  }
+
+  &__generatebutton {
+    position: fixed;
+    bottom: calc(0.5em + var(--header-height));
+    right: 0.5em;
+    background-color: color("red1");
+    border: 1px solid color("white");
+    color: color("white");
+    padding: 0.25em;
+    font-size: 2em;
+    font-weight: 700;
+    transition: transform 0.1s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(0.95);
+    }
+
+    &-disabled {
+      pointer-events: none;
+      background-color: color("gray");
+    }
+  }
+}

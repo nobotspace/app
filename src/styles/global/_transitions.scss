@@ -1,0 +1,108 @@
+.Transition {
+  &__fade {
+    &-enter,
+    &-appear {
+      opacity: 0;
+    }
+    &-enter-active,
+    &-appear-active {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    &-exit {
+      opacity: 1;
+    }
+    &-exit-active {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  &__fadeupswitch {
+    &-enter,
+    &-appear {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    &-enter-active,
+    &-appear-active {
+      opacity: 1;
+      transform: translateY(0px);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    &-exit {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    &-exit-active {
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+  }
+
+  &__faderightswitch {
+    &-enter,
+    &-appear {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    &-enter-active,
+    &-appear-active {
+      opacity: 1;
+      transform: translateX(0px);
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    &-exit {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    &-exit-active {
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+  }
+
+  &__fadeleft {
+    &-enter,
+    &-appear {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    &-enter-active,
+    &-appear-active {
+      opacity: 1;
+      transform: translateX(0px);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    &-exit {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    &-exit-active {
+      opacity: 0;
+      transform: translateX(10px);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+  }
+
+  &__rightswitch {
+    &-enter,
+    &-appear {
+      transform: translateX(120%);
+    }
+    &-enter-active,
+    &-appear-active {
+      transform: translateX(0px);
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    &-exit {
+      transform: translateX(0px);
+    }
+    &-exit-active {
+      transform: translateX(-120%);
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+  }
+}

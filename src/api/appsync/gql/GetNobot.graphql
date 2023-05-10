@@ -1,0 +1,31 @@
+query GetNobot($id: String!, $user_id: String!) {
+  getNobot(id: $id, user_id: $user_id) {
+    id
+      user_id
+      name
+      colors {
+        base
+        accent
+        main
+        accentShades
+        mainShades
+      }
+      resources {
+        head {
+          icon {
+            bucket
+            key
+          }
+        }
+        body {
+          model {
+            bucket
+            key
+          }
+        }
+      }
+      created_at
+      updated_at
+      owner
+  }
+}

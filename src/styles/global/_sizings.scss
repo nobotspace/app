@@ -1,0 +1,27 @@
+/*
+ * _sizings.scss
+ * author: evan kirkiles
+ * created on Tue Feb 28 2023
+ * 2023 experimount
+ */
+
+:root {
+  --nav-width: 3rem;
+  --header-height: 2.7rem;
+
+  @include media("sm") {
+    --header-height: 2.7rem;
+  }
+
+  @include media("md") {
+    --header-height: 2.7rem;
+  }
+
+  @include media("lg") {
+    --header-height: 2.8rem;
+  }
+
+  @include media("xxl") {
+    --header-height: 3rem;
+  }
+}
